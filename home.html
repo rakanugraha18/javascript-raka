@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body class="custom-gradient lg:flex justify-center">
+    <header>
+        <div class=" max-w-md mx-auto rounded-3xl md:max-w-2xl lg:max-w-5xl h-[104px] relative flex transition-all duration-300" name="logo">
+                <div class="ml-6 h-[104px] w-[140px] flex flex-col rounded-3xl absolute">
+                    <a href="./home.html"><h2 class="font-Pacifico py-7 text-start text-2xl text-white">My<span class="text-[#EC1B09] mx-1">Journal</span></h2></a>
+                </div>
+
+                <!-- Navigation Start -->
+                <nav class="h-[100px] w-[460px] flex justify-center rounded-3xl mb-4 lg:absolute lg:ml-[575px] xl:ml-[675px] lg:w-[403px] lg:mt-[142px] lg:shadow-md lg:bg-[#F2F7FC] transition-all duration-300" name="navigation">
+                    <div class="h-[100px] pt-3 w-[242px] flex ml-[195px] md:ml-[620px] mb-4 justify-evenly lg:ml-0 lg:w-[272px] transition-all duration-300">
+                        <div class="h-[100px] w-[242px] mt-[940px] lg:mt-0 justify-center mb-4 lg:ml-0 lg:w-[272px] transition-all duration-300" >
+                            <ul class="flex flex-wrap justify-evenly self-end " id="tab-list">
+                                <li class="cursor-pointer px-4 rounded-2xl hover:bg-[#FF9C1B] p-4 h-[70px] w-[70px] flex justify-center lg:h-20 lg:w-20 lg:mx-auto bg-gray-200" data-tab="tab-1">
+                                    <img src="assets/images/todo/todo.svg" alt="" data-tab="tab-1">
+                                </li>
+                                <li class="cursor-pointer px-4 rounded-2xl hover:bg-[#FF9C1B] p-4 h-[70px] w-[70px] flex justify-center lg:h-20 lg:w-20 lg:mx-auto bg-gray-200" data-tab="tab-2">
+                                    <img src="assets/images/todo/notes.svg" alt="" data-tab="tab-2">
+                                </li>
+                                <li class="cursor-pointer px-4 rounded-2xl hover:bg-[#FF9C1B] p-4 h-[70px] w-[70px] flex justify-center lg:h-20 lg:w-20 lg:mx-auto bg-gray-200" data-tab="tab-3">
+                                    <img src="assets/images/todo/schedule.svg" alt="" data-tab="tab-3">
+                                </li>
+                              </ul>
+                            </div>
+                    </div>                    
+                </nav>
+                <!-- Navigation End -->
+            </div>
+    </header> 
+    <!-- Profile Card Start -->
+    <aside class="lg:mr-6 max-w-md mx-auto rounded-3xl md:max-w-2xl lg:max-w-5xl lg:h-[860px] lg:place-self-start w-[460px] flex flex-col bg-[#FFFFFF] md:w-[1000px] md:shrink-0 lg:w-[350px] xl:w-[400px] pb-16 lg:ml-0 lg:mt-[100px] transition-all duration-300" name="profile-card">
+        <div class="h-[200px] w-[200px] bg-[#FF9C1B]  mt-[52px] rounded-xl mx-auto flex justify-center">
+            <img id="img_user" src="" alt="profile">
+        </div>
+        <div class="h-[36px] w-[235px] mx-auto mt-[5px] flex justify-center">
+            <h2 class="text-[28px] font-bold font-Poppins" id="fullName">Full Name</h2>
+        </div>
+        <div class="h-[40px] w-[152px] mx-auto mt-2 flex justify-around">
+            <p class="text:[16px] font-Raleway" id="job">Job Tittle</p>
+        </div>
+        <div class="h-[40px] w-[152px] mx-auto flex justify-around">
+            <p class="font-Raleway">Username:</p>
+            <p class="text:[16px] font-Raleway" id="username">username</p>
+        </div>
+        <div class="h-[350px] w-[350px] lg:w-[320px] bg-[#F2F5F9] mx-auto mt-[0px] rounded-2xl">
+            <div class="h-[63px] w-[260px]  mx-auto mt-[33px] flex flex-wrap justify-center">
+                <div class="absolute my-[6px] mr-[220px]"><img src="assets/images/icon/Phone.png" alt=""></div>
+                <div class="h-[25px] w-[260px] ml-12"> 
+                    <p class="text-sm text-gray-400 font-Raleway">Phone</p>
+                    <p class="text-sm font-Raleway" id="phone"></p>
+                </div>
+                <div class="h-[1px] w-[260px] bg-gray-200 self-end"></div>
+                
+            </div>
+            <div class="h-[63px] w-[260px] mx-auto mt-[16px]  justify-center flex flex-wrap ">
+                <div class="absolute my-[6px] mr-[220px]"><img src="assets/images/icon/Email.png" alt=""></div>
+                <div class="h-[25px] w-[260px] ml-12"> 
+                    <p class="text-sm text-gray-400 font-Raleway">Email</p>
+                    <p class="text-sm font-Raleway" id="email"></p>
+                </div>
+                <div class="h-[1px] w-[260px] bg-gray-200 self-end"></div>
+
+            </div>
+            <div class="h-[63px] w-[260px] mx-auto mt-[16px] justify-center flex flex-wrap ">
+                <div class="absolute my-[6px] mr-[220px]"><img src="assets/images/icon/Location.png" alt=""></div>
+                <div class="h-[25px] w-[260px] ml-12"> 
+                    <p class="text-sm text-gray-400 font-Raleway">Location</p>
+                    <p class="text-sm font-Raleway" id="location"></p>
+                </div>
+                <div class="h-[1px] w-[260px] bg-gray-200 self-end"></div>
+
+            </div>
+            <div class="h-[63px] w-[260px] mx-auto mt-[16px] flex justify-center"> 
+                <button class="bg-[#FF9C1B] w-[182px] h-[44px] rounded-3xl text-white hover:bg-[#EC1B09] duration-300" onclick="onLogout()">Logout</button>
+            </div>
+        </div>
+    </aside>
+    <!-- Profile card end -->
+    
+    <section class="mt-3 max-w-md mx-auto overflow-hidden rounded-3xl w-[460px] flex flex-col bg-[#FFFFFF]  pb-16  transition-all duration-300 pt-7  md:w-[1000px] md:shrink-0 md:max-w-2xl  lg:max-w-full lg:mt-[260px] lg:mx-10 lg:w-[650px] lg:min-h-[700px] lg:max-h-full xl:w-[850px] lg:ml-0">
+                    <div id="tab-content" class="mt-14 flex flex-wrap justify-center">
+                        <!-- Tab 1 -->
+                        <div id="tab-1" class="tab-content p-4 bg-white rounded-2xl shadow-md w-[95%] lg:w-[90%] xl:w-[75%]">
+                            <div class="max-w-md mx-auto bg-white rounded p-4 container " >
+                                <h1 class="text-2xl font-bold mb-4 font-Poppins">Todo List</h1>
+                                <div class="mb-4 flex flex-row">
+                                    <input type="text" id="taskInput" class="w-full border rounded text-start px-4 font-Raleway" placeholder="Add Task">
+                                    <button id="addTask" class="bg-[#FF9C1B] hover:bg-[#EC1B09] text-white py-2 px-4 rounded ml-2 font-Raleway" onclick="addTask()">Add</button>
+                                </div>
+                                <ul id="taskList" class="list-disc pl-6">
+                                    <li class="font-Raleway"></li>
+                                </ul>
+                            </div>
+                        </div>
+                                
+                        <!-- Tab 2 -->
+                        <div id="tab-2" class="tab-content hidden bg-white p-6 rounded-2xl shadow-md w-[95%] lg:w-[90%] xl:w-[75%]">
+                            <div class="p-4">
+                                <h1 class="text-3xl font-semibold mb-4 font-Poppins">Notes</h1>
+                                <div class="mb-4">
+                                    <button class="createBtn bg-[#FF9C1B] hover:bg-[#EC1B09] text-white px-4 py-2 rounded-md">Create Notes</button>
+                                </div>
+                                <div class="note-container bg-white p-4 rounded-md shadow-md">
+                                    <!-- <p id="note" contenteditable="true" class="input-box relative w-full h-48 bg-gray-100 p-2 rounded-md">
+                                        <img class="w-6 absolute bottom-4 right-4 cursor-pointer" src="./assets/images/notes/delete.svg" alt="">
+                                    </p> -->
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tab 3 -->
+                        <div id="tab-3" class="tab-content hidden flex-wrap justify-center p-4 ">
+                            <div class="flex flex-wrap justify-center">
+                            <div class="bg-white p-6 rounded-2xl shadow-md w-[95%] lg:w-[90%] xl:w-[75%]">
+                                <h2 class="text-2xl font-semibold mb-4 font-Poppins">Schedule Input</h2>
+                                <div class="mb-4">
+                                    <label for="date" class="block text-gray-600">Date</label>
+                                    <input type="date" id="date" class="w-full p-2 border rounded">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="scheduleType" class="block text-gray-600">Schedule Type</label>
+                                    <select id="scheduleType" class="w-full p-2 border rounded">
+                                        <option value="meeting">Meeting</option>
+                                        <option value="call">Call</option>
+                                        <option value="presentation">Presentation</option>
+                                        <option value="deadline">Deadline Assignment</option>
+                                        <option value="deadline">Session class</option>
+                                        <!-- Add more schedule types as needed -->
+                                    </select>
+                                </div>
+                                <button id="saveButton" class="bg-[#FF9C1B] text-white px-4 py-2 rounded hover:bg-[#EC1B09]">Save Schedule</button>
+                            </div>
+                        
+                            <div class="bg-white p-6 mt-4 rounded-2xl shadow-md w-[95%] lg:w-[90%] xl:w-[75%]">
+                                <h2 class="text-2xl font-semibold mb-4 font-Poppins">Schedules By Date</h2>
+                                <table class="relative">
+                                    <tr id="savedSchedules">
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                <!-- </div> -->
+          
+    </section> 
+</body>
+
+<script src="./js/home.js"></script>
+</html>

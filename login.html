@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+    <title>Login Page</title>
+</head>
+<body class="custom-gradient h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded shadow-md max-w-md w-full ">
+        <div class="flex flex-row justify-between">
+        <h2 class="text-2xl font-bold mb-4 font-Poppins py-7">Login</h2>
+            <h2 class="font-Pacifico py-7 text-start text-2xl text-[#FF9C1B]">My<span class="text-[#EC1B09] mx-1">Journal</span></h2>
+        </div>
+        <div>
+            <label for="username" class="text-sm font-Raleway">Username:</label>
+            <input type="text" id="username" class="w-full p-2 border rounded mb-2 font-Raleway" />
+        </div>
+        <div>
+            <label for="password" class="text-sm font-Raleway">Password:</label>
+            <input type="password" id="password" class="w-full p-2 border rounded mb-4" />
+        </div>
+        <button id="loginButton" class="bg-[#FF9C1B] text-white p-2 rounded w-full">Login</button>
+    </div>
+
+    <script type="module" src="./js/login.js"> </script>
+</body>
+</html>

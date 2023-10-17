@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-color: #4e4b4b;
+    background-size: cover;
+    background-position: center;
+    top: 4px;
+    left: -30px;    
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    position: absolute;
+    background-color: #1bff3d;
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    color: #555;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+ul li span:hover{
+    background: #EC1B09;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    background-color: #f0eded;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.input-box img{
+    position: absolute;
+    width: 24px;
+    bottom: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+table tr th{
+    padding: 8px 16px;
+    border: 8px none;
+
+}
+
+table tr b{
+    right: 0;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    color: #555;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 20%;
+    cursor: pointer;
+    padding: 5px;
+    margin : 0px 10px;
+    background: #FF9C1B;
+
+}
+table tr b:hover{
+    background: #EC1B09;
+    color: #fff;
+}
+
