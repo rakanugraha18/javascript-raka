@@ -687,6 +687,10 @@ video {
   display: none;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-48 {
   height: 12rem;
 }
@@ -737,6 +741,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.w-20 {
+  width: 5rem;
 }
 
 .w-6 {
@@ -897,6 +905,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -905,12 +917,21 @@ video {
   padding: 1rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .p-6 {
   padding: 1.5rem;
 }
 
 .p-8 {
   padding: 2rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .px-4 {
@@ -1100,12 +1121,13 @@ ul li span:hover{
   cursor: pointer;
 }
 
-table tr th{
+tbody tr th{
   padding: 8px 16px;
   border: 8px none;
+  font-family: 'Poppins', sans-serif;
 }
 
-table tr b{
+tbody tr b{
   right: 0;
   top: 0px;
   width: 30px;
@@ -1121,7 +1143,33 @@ table tr b{
   background: #FF9C1B;
 }
 
-table tr b:hover{
+tbody tr b:hover{
+  background: #EC1B09;
+  color: #fff;
+}
+
+thead td{
+  padding: 8px 16px;
+  border: 8px none;
+}
+
+thead td b{
+  right: 0;
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  color: #555;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 20%;
+  cursor: pointer;
+  padding: 5px;
+  margin : 0px 10px;
+  background: #FF9C1B;
+}
+
+thead td b:hover{
   background: #EC1B09;
   color: #fff;
 }
@@ -1286,4 +1334,3 @@ table tr b:hover{
     width: 850px;
   }
 }
-

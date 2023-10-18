@@ -169,6 +169,8 @@ noteContainer.addEventListener('click', function(e){
 })
 
 
+//schedule
+
 document.getElementById('saveButton').addEventListener('click', function () {
     // Mendapatkan nilai dari input tanggal dan tipe jadwal
     const dateInput = document.getElementById('date');
@@ -203,15 +205,15 @@ function displaySavedSchedules() {
 
     savedSchedulesList.innerHTML = '';
 
+
     savedSchedules.forEach((schedule, index) => {
         const listItem = document.createElement('tr');
         listItem.innerHTML = `<tr>
-            <td>Reminder Date</td>
             <th>${schedule.date}</th>
-            <td>Do</td>
             <th>${schedule.type}</th>
         </tr>`
         // `Schedule Reminder Date: ${schedule.date}, What to do? : ${schedule.type}  `;
+
 
 
         // Tambahkan tombol hapus
@@ -225,6 +227,7 @@ function displaySavedSchedules() {
         savedSchedulesList.appendChild(listItem);
     });
 }
+
 
 function removeSchedule(index) {
     const savedSchedules = JSON.parse(localStorage.getItem('schedules')) || [];
@@ -255,6 +258,26 @@ displaySavedSchedules();
 
 
 
+
+
+
+
+
+
+
+
+
+// function convDate(date){
+//     const newDate = date
+//     const day = newDate.getDay()
+//     const month = newDate.getMonth()
+//     const year = newDate.getFullYear()
+//     const hours = newDate.getHours()
+//     const minutes = newDate.getMinutes()
+//     const indoDate = `${day}-${month}-${year} ${hours}:${minutes}`
+
+//     return indoDate
+// }
 
 
 

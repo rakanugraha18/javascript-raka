@@ -24,13 +24,13 @@
                         <div class="h-[100px] w-[242px] mt-[940px] lg:mt-0 justify-center mb-4 lg:ml-0 lg:w-[272px] transition-all duration-300" >
                             <ul class="flex flex-wrap justify-evenly self-end " id="tab-list">
                                 <li class="cursor-pointer px-4 rounded-2xl hover:bg-[#FF9C1B] p-4 h-[70px] w-[70px] flex justify-center lg:h-20 lg:w-20 lg:mx-auto bg-gray-200" data-tab="tab-1">
-                                    <img src="assets/images/todo/todo.svg" alt="" data-tab="tab-1">
+                                    <img src="assets/images/todo/todo.svg" alt="Todo List" data-tab="tab-1">
                                 </li>
-                                <li class="cursor-pointer px-4 rounded-2xl hover:bg-[#FF9C1B] p-4 h-[70px] w-[70px] flex justify-center lg:h-20 lg:w-20 lg:mx-auto bg-gray-200" data-tab="tab-2">
-                                    <img src="assets/images/todo/notes.svg" alt="" data-tab="tab-2">
+                                <li class="cursor-pointer px-2 rounded-2xl hover:bg-[#FF9C1B] p-0 h-[70px] w-[70px] flex justify-center lg:h-20 lg:w-20 lg:mx-auto bg-gray-200" data-tab="tab-2">
+                                    <img src="assets/images/todo/notes.svg" class="h-20 w-20" alt="Notes" data-tab="tab-2">
                                 </li>
-                                <li class="cursor-pointer px-4 rounded-2xl hover:bg-[#FF9C1B] p-4 h-[70px] w-[70px] flex justify-center lg:h-20 lg:w-20 lg:mx-auto bg-gray-200" data-tab="tab-3">
-                                    <img src="assets/images/todo/schedule.svg" alt="" data-tab="tab-3">
+                                <li class="cursor-pointer px-4 rounded-2xl hover:bg-[#FF9C1B] p-5 h-[70px] w-[70px] flex justify-center lg:h-20 lg:w-20 lg:mx-auto bg-gray-200" data-tab="tab-3">
+                                    <img src="assets/images/todo/schedule.svg" alt="Schedule" data-tab="tab-3">
                                 </li>
                               </ul>
                             </div>
@@ -128,7 +128,7 @@
                                 <h2 class="text-2xl font-semibold mb-4 font-Poppins">Schedule Input</h2>
                                 <div class="mb-4">
                                     <label for="date" class="block text-gray-600">Date</label>
-                                    <input type="date" id="date" class="w-full p-2 border rounded">
+                                    <input type="datetime-local" id="date" class="w-full p-2 border rounded">
                                 </div>
                                 <div class="mb-4">
                                     <label for="scheduleType" class="block text-gray-600">Schedule Type</label>
@@ -147,8 +147,13 @@
                             <div class="bg-white p-6 mt-4 rounded-2xl shadow-md w-[95%] lg:w-[90%] xl:w-[75%]">
                                 <h2 class="text-2xl font-semibold mb-4 font-Poppins">Schedules By Date</h2>
                                 <table class="relative">
-                                    <tr id="savedSchedules">
-                                    </tr>
+                                    <thead class="font-bold font-Raleway">
+                                        <td>Reminder Date</td>
+                                        <td>Reminder Task</td>
+                                    </thead>
+                                    <tbody id="savedSchedules">
+                                        <tr></tr>
+                                    </tbody>
                                 </table>
                             </div>
                         </div>
@@ -157,6 +162,7 @@
                     </div>
                 <!-- </div> -->
           
+                
     </section> 
 </body>
 

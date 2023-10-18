@@ -65,13 +65,42 @@ ul li span:hover{
     cursor: pointer;
 }
 
-table tr th{
+tbody tr th{
+    padding: 8px 16px;
+    border: 8px none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+tbody tr b{
+    right: 0;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    color: #555;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 20%;
+    cursor: pointer;
+    padding: 5px;
+    margin : 0px 10px;
+    background: #FF9C1B;
+    
+
+}
+tbody tr b:hover{
+    background: #EC1B09;
+    color: #fff;
+}
+
+thead td{
     padding: 8px 16px;
     border: 8px none;
 
 }
 
-table tr b{
+thead td b{
     right: 0;
     top: 0px;
     width: 30px;
@@ -87,8 +116,7 @@ table tr b{
     background: #FF9C1B;
 
 }
-table tr b:hover{
+thead td b:hover{
     background: #EC1B09;
     color: #fff;
 }
-
