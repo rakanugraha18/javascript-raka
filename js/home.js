@@ -42,6 +42,7 @@ function getDataUser() {
 
 getDataUser()
 
+//Todo List
 
 const taskInput = document.getElementById('taskInput')
 const taskList = document.getElementById('taskList')
@@ -213,8 +214,6 @@ function displaySavedSchedules() {
             <th>${schedule.type}</th>
         </tr>`
         // `Schedule Reminder Date: ${schedule.date}, What to do? : ${schedule.type}  `;
-
-
 
         // Tambahkan tombol hapus
         const deleteButton = document.createElement('b');
