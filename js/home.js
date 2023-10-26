@@ -86,7 +86,7 @@ function onLogout() {
   //2. Pindah page ke login
 
   localStorage.removeItem("user");
-  window.location.href = "../index.html";
+  window.location.href = "../";
 }
 
 //tab
