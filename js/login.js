@@ -12,7 +12,7 @@ function onLogin() {
 
   if (users) {
     localStorage.setItem("user", JSON.stringify(users));
-    window.location.href = "../home/index.html";
+    window.location.href = "../home";
   } else {
     alert("username or password invalid please try again.");
   }
